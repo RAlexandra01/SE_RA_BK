@@ -6,9 +6,9 @@ body{
 }
 h1{
     color: aquamarine;
-    font-size: large;
+    font-size: 40px;
 }
-.vissza{
+#vissza{
     font-variant: small-caps;
     font-size: small;
     text-align: right;
