@@ -1,0 +1,27 @@
+üdvözöljük a weboldalunkon
+osi modell
+dhcp
+csapattagok
+egy rendszergazda kép
+
+
+bemutatkozó oldal
+név
+hobby
+sport
+egy kép, amin cica/kutya van leírással
+jobb oldalt alul linek vissza az üdvözlésre
+
+
+dhcp:
+dynamic host...
+egy kis leírás
+dhcp folyamatról egy kép
+jobb oldalt link 
+
+
+osi:
+open system...
+kis leírás
+osi modell tcp/ip modell összehasonlítás
+jobbra link
