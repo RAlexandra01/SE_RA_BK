@@ -3,6 +3,7 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: justify;
     color: aquamarine;
+    font-size: 25px;
 }
 h1{
     color: aquamarine;
@@ -10,9 +11,8 @@ h1{
 }
 #vissza{
     font-variant: small-caps;
-    font-size: small;
+    font-size: 30px;
     text-align: right;
-    color: chartreuse;
 }
 a{
     color: aquamarine;
