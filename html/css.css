@@ -1,15 +1,19 @@
 body{
-    background-color: violet;
+    background-color: purple;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: justify;
-    margin:  0px 350px 0px 400px;
+    color: aquamarine;
+    font-size: 25px;
 }
 h1{
     color: aquamarine;
-    font-size: large;
+    font-size: 40px;
 }
-.vissza{
+#vissza{
     font-variant: small-caps;
-    font-size: small;
+    font-size: 30px;
     text-align: right;
+}
+a{
+    color: aquamarine;
 }
