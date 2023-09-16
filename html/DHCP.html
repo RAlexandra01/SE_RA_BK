@@ -7,5 +7,16 @@
     <title>Dynamic Host Configuration Protocol</title>
 </head>
 <body>
+    <h1>Dynamic Host Configuration Protocol</h1>
+    <p>A DHCP szerver-kliens alapú protokoll, nagy vonalakban a kliensek által küldött DHCP-kérésekből, és a szerver által adott DHCP-válaszokból áll.<br>
+    Dinamikusan oszthatóak ki IP-címek, tehát a hálózatról lecsatlakozó számítógépek IP-címeit megkapják a hálózatra felcsatlakozó számítógépek, ezért hatékonyabban használhatóak ki a szűkebb címtartományok.<br>
+    A DHCP engedélyezéséhez a rendszergazdáknak különböző típusú csomagok áthaladását kell engedélyezni a szerveroldali tűzfalon. Minden DHCP-csomag UDP-datagramként halad tovább; az összes kliensoldali csomag forrása a 68-as és célja a 67-es port; a szerveroldalon ez pont fordítva.</p>
+    <p>3 féle IP-kiosztás lehetséges DHCP-vel:</p>
+    <ul>kézi (MAC-cím alapján)</ul>
+        <ul>automatikus (DHCP-vel kiadható IP-tartomány megadásával)</ul>
+        <ul>dinamikus (IP-tartomány megadásával, de az IP-címek „újrahasznosításával”)</ul>
+        <img src="dhcp.png">
+        <p id="vissza">
+     <a href="udvozlo.html">Vissza a főoldalra</a></p>
 </body>
 </html>
