@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,5 +8,87 @@
 </head>
 <body>
     
-</body>
+=======
+<html lang="hu">
+<head>
+    <meta name="author" content="Balatoni Kitti">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSI modell</title>
+    <link href="css.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Az OSI modell</h1>
+
+<h3>Mi az OSI modell?</h3>
+<p>Az OSI modell nem más, mint a kommunikációs protokollok szabványa. piros. Ezek a protokollok két vagy több számítógép összekapcsolására használt kommunikációs szabályok. Az OSI-modell ezeket a protokollokat meghatározott csoportokba vagy rétegekbe csoportosítja.
+    Ezt a szabványt a különböző eredetű rendszerek összekapcsolásának ambiciózus célját követte, hogy mindenféle akadály nélkül tudjanak információt cserélni, a protokollok miatt, amelyekkel a gyártójuk szerint működtek. Az OSI modell 7 absztrakciós rétegből vagy szintből áll. Mindegyik szintnek megvan a maga funkciója, így együtt el tudják érni végső céljukat. Pontosan ez a szintek szerinti szétválasztás teszi lehetővé a különböző protokollok egymás közötti kommunikálását, azáltal, hogy az egyes működési szintekre specifikus funkciókat koncentrálnak. Az OSI-modell minden egyes rétege meghatározott funkcióval rendelkezik, és kommunikál a feletti és lenti rétegekkel</p>
+
+    <h2>Rétegei:</h2>
+
+    <h3>1. Fizikai réteg</h3>
+    <p>A fizikai réteg feladata a bitek kommunikációs csatornára való juttatása. Ez a réteg határoz meg minden, az eszközökkel kapcsolatos fizikai és elektromos specifikációt, beleértve az érintkezők kiosztása a használatos feszültség szintek és a kábel specifikációk. </p>
+    <p>A fizikai réteg által megvalósított fő funkciók: </p>
+    <ol>
+        <li>felépíteni és lezárni egy csatlakozást egy kommunikációs médiummal </li>
+        <li>részt venni egy folyamatban, amelyben a kommunikációs erőforrások több felhasználó közötti hatékony megosztása történik. Például, kapcsolat szétosztás és adatáramlás vezérlés. </li>
+        <li>moduláció, vagy a digitális adatok olyan átalakítása, konverziója, jelátalakítása, ami biztosítja, hogy a felhasználó adatait a megfelelő kommunikációs csatorna továbbítani tudja. A jeleket vagy fizikai kábelen – réz vagy optikai szál, például – vagy rádiós kapcsolaton keresztül kell továbbítani </li>
+    </ol>
+        
+    <h3>2. Adatkapcsolati réteg</h3>
+    <p>A adatkapcsolati réteg biztosítja azokat a funkciókat és eljárásokat, amelyek lehetővé teszik az adatok átvitelét két hálózati elem között. Jelzi, illetve lehetőség szerint korrigálja a fizikai szinten történt hibákat is. 
+        A használt egyszerű címzési séma fizikai szintű, azaz a használt címek fizikai címek (MAC címek) amelyeket a gyártó fixen állított be hálózati kártya szinten. 
+        
+        </p>
+
+    <h3>3. Hálózati réteg</h3>
+    <p>A hálózati réteg biztosítja a változó hosszúságú adat sorozatoknak a küldőtől a címzetthez való továbbításához szükséges funkciókat és eljárásokat, úgy, hogy az adatok továbbítása a szolgáltatási minőségfüggvényében akár egy vagy több hálózaton keresztül is történhet. 
+        A hálózati réteg biztosítja a hálózati útvonalválasztást, az adatáramlás ellenőrzést, az adatok szegmentálását/deszegmentálását, és főként a hiba ellenőrzési funkciókat. 
+        </p>
+
+
+    <h3>4. Szállítási réteg</h3>
+    <p>A szállítási réteg biztosítja, hogy a felhasználók közötti adatátvitel transzparens legyen. A réteg biztosítja, és ellenőrzi egy adott kapcsolat megbízhatóságát. Néhány protokoll kapcsolat orientált. Ez azt jelenti, hogy a réteg nyomon követi az adatcsomagokat, és hiba esetén gondoskodik a csomag vagy csomagok újraküldéséről. </p>
+
+    <p><b>A legismertebb 4. szintű protokoll a TCP és az UDP.</b></p>
+
+    <p>A TCP ellenőrzi az adatok sértetlen átvitelét, és szükség esetén újraküldi az elveszett vagy megsérült csomagokat, így az ilyen jellegű hibák kezelésére használata során már nem kell gondot fordítani. Ezen kívül gondoskodik arról is, hogy az adatokat a fogadó a küldési sorrendben kapja meg, azaz egy adatfolyam jellegű átviteli csatornát biztosít, amelyben a fogadási oldalon garantáltan mindig pontosan ugyanaz "jön ki", amit a küldési oldalon "beleraktak".</p>
+
+    <p>Az UDP viszont, az TCP-vel szemben nem ellenőrzi az adatok sértetlen átvitelét, ezért nem képes az elveszett vagy sérült csomagok pótlására. Ezen kívül a fogadás sorrendjét sem garantálja a vételi oldalon.
+        Ezen jellemzői miatt az UDP-t kizárólag olyan esetekben alkalmazzák, ahol a küldött adatok viszonylag kis részének elvesztése nem okoz működési problémát, sőt, esetleg kívánatos is (pl. torlódás esetén), mint pl. a műsorszórás; vagy ahol ezen hibák korrigálásáról egy magasabb szintű protokoll gondoskodik.
+        </p>
+
+
+    <h3>5. Viszonylati réteg</h3>
+    <p>A viszonylati réteg a végfelhasználói alkalmazások közötti dialógus menedzselésére alkalmas mechanizmust valósít meg. A megvalósított mechanizmus lehet duplex vagy fél duplex, és megvalósítható ellenőrzési pontok kijelölési, késleltetések beállítási, befejezési, illetve újraindítási eljárások. (A mai OSI modellben a Viszonylati réteg a Szállítási rétegbe lett beépítve.)</p>
+
+    <p><b>Fél-duplex</b> összeköttetésnek az egy vagy több átviteli csatornát használó, kétirányú összeköttetést nevezzük, amennyiben az átvitel egyidejűleg csak az egyik irányban jöhet létre
+
+    </p>
+
+    <p><b>Duplex</b> üzemmódnak nevezzük amikor egy rádióállomás egyidejűleg van adáson is valamint vételen, azaz egyidejűleg kétirányú kommunikáció valósul meg..</p>
+
+
+    <h3>6. Megjelenítési réteg</h3>
+    <p>A megjelenítési réteg biztosítja az alkalmazási réteg számára, hogy az adatok a végfelhasználó rendszerének megfelelő formában álljon rendelkezésre. Feladata: </p>
+
+<ol>
+    <li>két számítógép között logikai kapcsolat létesítése </li>
+    <li>párbeszéd szervezése </li>
+    <li>vezérjel kezelés </li>
+    <li>szinkronizálás</li>
+</ol>
+
+<h3>7. Alkalmazási réteg</h3>
+
+<p>Az alkalmazási réteg szolgáltatásai támogatják a szoftver alkalmazások közötti kommunikációt, és az alsóbb szintű hálózati szolgáltatások képesek értelmezni alkalmazásoktól jövő igényeket, illetve, az alkalmazások képesek a hálózaton küldött adatok igényenkénti értelmezésére. 
+    Az alkalmazási réteg protokolljain keresztül az alkalmazások képesek egyeztetni formátumról, további eljárásról, biztonsági, szinkronizálási vagy egyéb hálózati igényekről. 
+    
+    </p>
+
+    <p><b>A legismertebb alkalmazási réteg szintű protokollok a HTTP, az SMTP, az FTP és a Telnet.</b></p>
+
+
+
+    <img src="osi modell ábra.png" alt="Osi modell ábra" title="Osi modell ábra">
 </html>
