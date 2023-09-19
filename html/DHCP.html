@@ -12,10 +12,20 @@
     Dinamikusan oszthatóak ki IP-címek, tehát a hálózatról lecsatlakozó számítógépek IP-címeit megkapják a hálózatra felcsatlakozó számítógépek, ezért hatékonyabban használhatóak ki a szűkebb címtartományok.<br>
     A DHCP engedélyezéséhez a rendszergazdáknak különböző típusú csomagok áthaladását kell engedélyezni a szerveroldali tűzfalon. Minden DHCP-csomag UDP-datagramként halad tovább; az összes kliensoldali csomag forrása a 68-as és célja a 67-es port; a szerveroldalon ez pont fordítva.</p>
     <p>3 féle IP-kiosztás lehetséges DHCP-vel:</p>
-    <ul>kézi (MAC-cím alapján)</ul>
-        <ul>automatikus (DHCP-vel kiadható IP-tartomány megadásával)</ul>
-        <ul>dinamikus (IP-tartomány megadásával, de az IP-címek „újrahasznosításával”)</ul>
-        <img src="dhcp.png">
+    <ul>
+    <li>kézi (MAC-cím alapján)</li>
+        <li>automatikus (DHCP-vel kiadható IP-tartomány megadásával)</li>
+        <li>dinamikus (IP-tartomány megadásával, de az IP-címek „újrahasznosításával”)</li>
+        </ul> 
+        <img id="kep" src="dhcp.png">
+        <p>Dhcp müködése lépésekben: </p>
+        <ol>
+           <li>Az eszköz elindul vagy hálózati kapcsolatot próbál létrehozni.</li> 
+           <li>Az eszköz elküld egy DHCP Discover üzenetet a hálózaton.</li> 
+           <li>Az üzenetet elérhető DHCP szerverek veszik észre, és válaszolnak egy DHCP Offer üzenettel, amely tartalmazza az elérhető IP címeket és egyéb hálózati beállításokat.</li>
+           <li>Az eszköz fogadja az ajánlatokat, és válaszol egy DHCP Request üzenettel az egyik szervernek, amelyiket kiválasztja.</li>
+            <li>A kiválasztott DHCP szerver elküldi a DHCP Acknowledgment üzenetet az eszköznek, amelyben megerősíti az IP cím és egyéb beállítások kiosztását.</li>
+        </ol>
         <p id="vissza">
      <a href="udvozlo.html">Vissza a főoldalra</a></p>
 </body>
