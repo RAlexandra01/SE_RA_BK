@@ -17,3 +17,8 @@ h1{
 a{
     color:rgb(240, 220, 133) ;
 }
+
+#kep{
+    width: 500px;
+    height: auto;
+}
